@@ -1,5 +1,3 @@
-# Author: Gabriel Miglioranza
-# Date: 29/05/2019 - 04/06/2019
 # Chapter 3 exercises from the book Python Crash Course: A Hands-On, Project-Based Introduction to Programming.
 
 # Lists - Exercises

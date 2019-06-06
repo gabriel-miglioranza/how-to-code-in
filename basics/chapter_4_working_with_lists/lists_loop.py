@@ -1,6 +1,3 @@
-# Author: Gabriel Miglioranza
-# Date: 05/06/2019 - 
-#
 # This code contains simple examples about working with lists in Python.
 
 # Looping Through an Entire List
@@ -30,6 +27,59 @@ print('Thank you, everyone. That was a great magic show!')
 # Forgetting to Indent 
 # When Python expects an indent block and doesn't find one (after a for statement for example), it lets you know which line it had a problem with.
 # Remove the #'s from the next two lines and run the program to see the result. 
-# for magicians in magician:
-# print(magician)
+#for magicians in magician:
+#print(magician)
+
 # Forgetting to Indent Additional Lines
+# In contrast with the syntax errors, we have logic errors, an example is forgetting to indent additional lines. The python interpreter is not going to return an syntax error, but if you forget to indent a line that should be in the for loop, your code will not present the desired output.
+for magician in magicians:
+    # Inside the for Loop
+    print(magician.title() + ', that was a great trick!')
+    # Inside the for Loop
+# Outside the for Loop
+print("I can't wait to see your next trick, " + magician.title() + ".\n")
+
+# Indenting Unnecessarily
+# If by accident you indent unnecessarily Python will report that error.
+# Remove the #'s from the next two lines and run the program to see the result. 
+#   print(magician)
+
+# Indenting Unnecessarily After the Loop
+# If you indent unnecessarily after a loop you will fall into a logic error. Python will accept you syntax, but the scripts will not return the desired result.
+for magician in magicians:
+    # Inside the for Loop
+    print(magician.title() + ', that was a great trick!')
+    print("I can't wait to see your next trick, " + magician.title() + ".\n")
+    
+    print('Thank you, everyone. That was a great magic show!')
+    # Inside the for Loop
+# Outside the for Loop
+
+# Forgetting the Colon
+# The colon (:) tells Python to interpret the next line as a loop start, if you forget to put it, an syntax error is displayed at your screen.
+# Remove the #'s from the next two lines and run the program to see the result. 
+# for magicians in magician
+#   print(magician)
+
+# Making Numerical Lists
+
+# Using the range() Function
+# The range() function is used to generate a sequence of integer numbers.
+# In the example next example will print the numbers from 1 to 4 = {1,2,3,4}
+for value in range(1,5):
+    print(value)
+
+# Using range() to Make a List of Numbers
+# To store a sequence of numbers in a list, you can use the list() function combined with the range() function.
+print('List of numbers from 1 to 5: ')
+numbers = list(range(1,6))
+print(numbers)
+# You can create a diverse set of sequences with the range() function.
+print('Sequence of even numbers from 0 to 20: ')
+even_numbers = list(range(0,21,2))
+print(even_numbers)
+print('Sequence of areas from squares with side lengths from 1 to 10:')
+squares = []
+for value in range(1,11):
+    squares.append(value**2)
+print(squares)

@@ -1,6 +1,3 @@
-# Author: Gabriel Miglioranza
-# Date: 29/05/2019
-#
 # This code contains simple examples about the use and manipulation of strings in Python.
 
 # A string is a sequence of characters, anything between "" or '' is considered a string in python.

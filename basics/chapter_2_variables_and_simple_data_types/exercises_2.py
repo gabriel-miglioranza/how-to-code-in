@@ -1,5 +1,3 @@
-# Author: Gabriel Miglioranza
-# Date: 29/05/2019
 # Chapter 2 exercises from the book Python Crash Course: A Hands-On, Project-Based Introduction to Programming.
 
 # Strings - Exercises
