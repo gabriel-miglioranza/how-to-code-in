@@ -83,3 +83,18 @@ squares = []
 for value in range(1,11):
     squares.append(value**2)
 print(squares)
+
+# Simple Statistics with a list of Numbers
+# The function min() returns the minimum value from a list of numbers.
+digits = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
+min_digits = min(digits)
+print(min_digits)
+# The function max() returns the maximum value from a list of numbers.
+max_digits = max(digits)
+print(max_digits)
+# The function sum() returns the summation of a list of numbers.
+sum_digits = sum(digits)
+print(sum_digits)
+# List Comprehensions
+# To generate the list with a sequence of areas from squares with side lengths from 1 to 10, we used three lines. With list cromprehension is possible to obtain the same result with one line of code. The next example builds this list with one line:
+squares = [value**2 for value in range(1,11)]
