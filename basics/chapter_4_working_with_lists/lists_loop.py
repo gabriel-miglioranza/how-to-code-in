@@ -98,3 +98,52 @@ print(sum_digits)
 # List Comprehensions
 # To generate the list with a sequence of areas from squares with side lengths from 1 to 10, we used three lines. With list cromprehension is possible to obtain the same result with one line of code. The next example builds this list with one line:
 squares = [value**2 for value in range(1,11)]
+
+# Working with Part of a List
+
+# Slicing a List
+# To slice a list just specify the first and the last elements you want to work with.
+players = ['charles', 'martina', 'michel', 'florence', 'eli']
+print(players[0:3])
+# It is possible to generate any subset of a list. 
+print(players[1:4])
+# If the first index is ommited, Python starts your slice at the beggining of the list.
+print(players[:4])
+# If the last index is ommited, Python return the slice till the end of the list.
+print(players[2:])
+# This syntax allows you to output all of the elements from your list. If you wat to output the last three elements in your list, you can use the slice:
+print(players[-3:])
+
+# Looping Through a Slice 
+# You can use a slice in a for loop
+print('Here are the last three players on my team:')
+for player in players[-3:]:
+    print(player.title())
+
+# Copying a List
+# To copy a list, you can make a slice that includes the entire original list. Just ommit the first and the last index.
+my_foods = ['pizza', 'falafel', 'carrot cake']
+friend_foods = my_foods[:]
+
+print('My favorite foods are:')
+print(my_foods)
+
+print("\nMy friend's favorite foods are:")
+print(friend_foods)
+
+# Look! my_foods and friend_foods are distinct lists.
+my_foods.append('cannoli')
+friend_foods.append('ice cream')
+
+print('My favorite foods are:')
+print(my_foods)
+
+print("\nMy friend's favorite foods are:")
+print(friend_foods)
+
+# Atention! 
+# friend_foods = my_foods 
+# This does not create a new list with name 'friend_foods' 
+# This just points the name 'friend_foods' to the same list 'my_foods'
+
+
