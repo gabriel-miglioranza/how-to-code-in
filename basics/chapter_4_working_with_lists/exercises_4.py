@@ -71,6 +71,8 @@ print("My friend's favorite pizzas are:")
 for flavor in friend_flavors:
     print(flavor)
 
+# Tuples
+
 # 4-13. Buffet
 buffet = ('pizza', 'hamburger', 'sushi','bread','french fries')
 print('Original menu:')

@@ -90,3 +90,68 @@ if user not in banned_users:
 game_active = True 
 can_edit = False
 
+# if Statements
+
+# Simple if Statements
+# if conditional_test:
+#   do something
+age = 19
+conditional_test = age >= 16
+if conditional_test:
+    print('You are old enough to vote!')
+
+# if-else Statements
+# if-else statements are used when you want to execute a set of actions when the conditional test fails (returns False).
+
+age = 19
+conditional_test = age >= 16
+if conditional_test:
+    print('You are old enough to vote!')
+    print('Have you registered to vote yet?')
+else: 
+    print('Sorry, you are too young to vote.')
+    print('Please register to vote as soon as you turn 16!')
+
+# The if-elif-else Chain
+
+# The if-elif-chain can be understood through the following example:
+# You are going to the movies and decided to buy the ticket from the movie theater's website. The price for a adult is the full price, let it be $18, but if you have less than 18 years you pay only half of the price, and if you have less than 8 years you get it for free. How you print the correct price depending on the user age? Like this:
+
+age = 12
+
+if age <= 8:
+    print('This ticket is free, have fun with the movie!')
+elif age < 18:
+    print('The ticket costs $9.')
+else: 
+    print('The ticket costs $18.')
+
+# Using Multiple elif Blocks 
+# Suppose now that the movie theater wants to reach the elderly market, as a incentive they put the ticket's price $13 for people over 65 years. With a simple alteration of the above code we can print the correct message for those who have more than 65 years.
+
+if age <= 8:
+    print('This ticket is free, have fun with the movie!')
+elif age < 18:
+    print('The ticket costs $9.')
+elif age > 65:
+    print('The ticket costs $13.')
+else: 
+    print('The ticket costs $18.')
+
+# Ommiting the else Block
+# Python does not require the else block at the end of an if-elif chain.
+
+if age <= 8:
+    print('This ticket is free, have fun with the movie!')
+elif age < 18:
+    print('The ticket costs $9.')
+elif age > 65:
+    print('The ticket costs $13.')
+elif age >= 18 and age <= 65: 
+    print('The ticket costs $18.')
+
+# The else block is also known as the default in the if-elif chain, because if the previous conditions in a if-elif are not satified Python runs the else block. 
+
+# Testing Multiple Conditions
+# The if-elif-else chain permits only one test to pass, if you want to check all the conditions of interest you need test one by one separately.
+
