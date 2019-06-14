@@ -1,6 +1,3 @@
-# Author: Gabriel Miglioranza
-# Date: 29/05/2019 - 04/06/2019
-#
 # This code contains simple examples about the use and manipulation of lists in Python.
 
 # What is a list?
