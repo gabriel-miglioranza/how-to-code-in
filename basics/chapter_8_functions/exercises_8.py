@@ -77,3 +77,72 @@ while True:
     print(album)
 print('Goodbye!')
 
+# 8-9. Magicians
+def show_magicians(magicians):
+    '''Show magicians' names.'''
+    for magician in magicians:
+        print(magician.title())
+
+magicians = ['david copperfield', 'robert angier', 'alfred borden']
+show_magicians(magicians)
+
+# 8-10. Great Magicians
+def make_great(magicians):
+    for i in range(len(magicians)):
+        magicians[i] = 'the great '+ magicians[i]
+    return magicians
+
+
+show_magicians(make_great(magicians[:]))
+
+# 8-11. Uncharged Magicians
+great_magicians = make_great(magicians[:])
+show_magicians(great_magicians)
+show_magicians(magicians)
+
+# 8-12. Sandwiches
+def make_sandwich(*items):
+    '''Summarize the sandwich we are about to make.'''
+    print('Making a sandwich with the following items:')
+    for item in items:
+        print('- ' + item)
+
+make_sandwich('pastrami', 'cheese')
+make_sandwich('bread')
+make_sandwich('cheese', 'ham', 'bacon')
+
+def build_profile(first, last, **user_info):
+    '''Build a dictionary containig everything we know about the user.'''
+    profile = {}
+    profile['first_name'] = first
+    profile['last_name'] = last
+    for key, value in user_info.items():
+        profile[key] = value
+    return profile
+
+user_profile = build_profile('tony','montanha', age=4, breed='shih tzu')
+
+# 8-14. Cars
+def build_car(manufacturer, model, **car_info):
+    '''Building a dictionary containig everything we know about a car.'''
+    car = {}
+    car['manufacturer'] = manufacturer
+    car['model'] = model
+    for key, value in car_info.items():
+        car[key] = value
+    return car
+
+car = build_car('subaru', 'outback', color='blue', tow_package=True)
+print(car)
+
+# 8-15. Printing Models
+import printing_functions as pf
+
+unprinted_designs = ['iphone case', 'robot pendant', 'dodecahedron']
+completed_models = []
+
+pf.print_models(unprinted_designs, completed_models)
+pf.show_completed_models(completed_models)
+
+# 8-16. Imports
+# 8-17. Styling Functions 

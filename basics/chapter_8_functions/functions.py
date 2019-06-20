@@ -125,3 +125,123 @@ while True:
     print('\nHello, ' + formatted_name + '!')
 print('Goodbye!')
 
+# Passing a List
+# It is often useful to pass an entire list to a function.
+def greet_users(names):
+    '''Print a simple greeting to each user in the list.'''
+    for name in names:
+        msg = 'Hello, ' + name.title() + '!'
+        print(msg)
+
+# Modifying a List in a Function
+# Watchout! Any changes of a list inside a function is permanent.
+def print_models(unprinted_designs, completed_models):
+    '''
+    Simulate printing each design, until none are left.
+    Move each design to completed_models after printing.
+    '''
+    while unprinted_designs:
+        current_design =  unprinted_designs.pop()
+        print('Printing model: ' + current_design)
+        completed_models.append(current_design)
+
+def show_completed_models(completed_models):
+    '''Show all the models that were printed.'''
+    print('\nThe following models have been printed:')
+    for completed_model in completed_models:
+        print(completed_model)
+
+unprinted_designs = ['iphone case', 'robot pendant', 'dodecahedron']
+completed_models = []
+
+print_models(unprinted_designs, completed_models)
+show_completed_models(completed_models)
+
+# Preventing a Function from Modifying a List
+# If you don't want to modify the original list during the function execution pass a copy of the list like this:
+unprinted_designs = ['iphone case', 'robot pendant', 'dodecahedron']
+completed_models = []
+
+print_models(unprinted_designs[:], completed_models)
+show_completed_models(completed_models)
+print(unprinted_designs)
+
+# Passing an Arbitrary Number of Arguments
+# Sometimes you won't know ahead of time how many arguments a function needs to accept. In python you can use a especial type of argument conventionally named *args. Here is an example:
+def make_pizza(*toppings):
+    '''Summarize the pizza we are about to make.'''
+    print('\nMaking a pizza with the following toppings:')
+    for topping in toppings:
+        print('- ' + topping)
+print('Pizza 1: ')
+make_pizza('pepperoni')
+
+print('Pizza 2: ')
+make_pizza('mushrooms', 'green peppers', 'extra cheese')
+
+# Mixing Positional and Arbitrary Arguments
+# If you want a function to accept different kinds of arguments you need to follow a specific order in the function definition. First, the positional arguments and then the arbitrary arguments.
+
+def make_pizza(size, *toppings):
+    '''Summarize the pizza we are about to make.'''
+    print('\nMaking a '+ str(size) + '-inch pizza with the following toppings:')
+    for topping in toppings:
+        print('- ' + topping)
+print('Pizza 1: ')
+make_pizza(16, 'pepperoni')
+
+print('Pizza 2: ')
+make_pizza(12, 'mushrooms', 'green peppers', 'extra cheese')
+
+# Using Arbitrary Keyword Arguments
+# If you need to pass an arbitrary number of arguements but you doesn't know ahead of time what kind of information will be passed to the function, use the **kwargs in the function definition.
+
+def build_profile(first, last, **user_info):
+    '''Build a dictionary containig everything we know about the user.'''
+    profile = {}
+    profile['first_name'] = first
+    profile['last_name'] = last
+    for key, value in user_info.items():
+        profile[key] = value
+    return profile
+
+user_profile = build_profile('albert', 'einstein', location='princeton', field='physics')
+
+print(user_profile)
+
+# Storing Your Functions in Modules
+# Storing function in modules is useful when you want to reuse functions.
+
+# Importing an Entire Module
+# We will import the entire module from 'module.py'.
+#import sandwich
+# Now the we can call the function make_sandwich().
+#make_sandwich(15, 'bread', 'peanut butter', 'jelly')
+# Non available Syntax!
+
+# Importing Specific Functions 
+# We will import just the function make_sandwich() from 'module.py'.
+from sandwich import make_sandwich
+# Now the we can call the function make_sandwich().
+make_sandwich(15, 'bread', 'peanut butter', 'jelly')
+
+# Using as to Give a Function an Alias
+# We will import just the function make_sandwich() from 'module.py'.
+from sandwich import make_sandwich as ms
+# Now the we can call the function make_sandwich() as ms.
+ms(15, 'bread', 'peanut butter', 'jelly')
+
+# Using as to Give a Module an Alias
+# We will import the 'module.py' as m.
+import sandwich as s
+# Now the we can call the function make_sandwich() as m.make_sandwich().
+s.make_sandwich(15, 'bread', 'peanut butter', 'jelly')
+
+# Importing All Functions in a Module
+# We will import all functions from 'module.py'.
+from module import *
+# Now the we can call the function make_sandwich().
+make_sandwich(15, 'bread', 'peanut butter', 'jelly')
+
+# Styling Functions
+
