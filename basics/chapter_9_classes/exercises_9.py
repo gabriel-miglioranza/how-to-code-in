@@ -94,3 +94,25 @@ for i in range(3): user.increment_login_attempts()
 print(user.login_attempts)
 user.reset_login_attempts()
 print(user.login_attempts)
+
+# 9-6. Ice Cream Stand
+class IceCreamStand(Restaurant):
+    '''Represent aspects of restaurant, specific to ice cream stands.'''
+    def __init__(self, restaurant_name, cuisine_type, flavors):
+        '''
+        Initialize attributes of parent class.
+        Then initialize attributes specific to ice cream stands.
+        '''
+        super().__init__(restaurant_name, cuisine_type)
+        self.flavors = flavors
+    
+    def display_flavors(self):
+        '''Display the available flavors from the ice cream stand.'''
+        print('The available flavors are: ')
+        for flavor in self.flavors:
+            print('- ' + flavor)
+
+stand = IceCreamStand('IceCream', 'Italian', ['vanilla', 'chocolate', 'strawberry'])
+stand.display_flavors()
+# 9-7. Admin
+ 
