@@ -119,7 +119,7 @@ my_new_car.read_odometer()
 
 # The super() function is a special one. Its necessary to make the connection between the parent class (superclass) and the child one (subclass).
 
-class EletricCar(Car):
+class ElectricCar(Car):
     '''Represents aspects of car, specific to electric vehicles.'''
 
     def __init__(self, make, model, year):
@@ -138,7 +138,7 @@ class EletricCar(Car):
         """Eletric cars don't have gas tanks."""
         print("This car doesn't need a gas tank!")
 
-my_tesla = EletricCar('tesla', 'model s', 2016)
+my_tesla = ElectricCar('tesla', 'model s', 2016)
 print(my_tesla.get_descriptive_name())
 
 # Defining Attributes and Mehods for the Child Class
@@ -165,11 +165,11 @@ class Battery():
     def get_range(self):
         '''Print a statement about the range this battery provides.'''
         if self.battery_size == 70:
-            range = 240
+            battery_range = 240
         elif self.battery_size == 85:
-            range = 270
+            battery_range = 270
         
-        message = 'This car can go approximately ' + str(range)
+        message = 'This car can go approximately ' + str(battery_range)
         message += ' miles on a full charge.'
         print(message) 
 
