@@ -51,7 +51,7 @@ favorite_languages = {
     'phil': 'python'
 }
 
-print("Sarah's favourite language is " + favourite_languages['sarah'].title() + ".")
+print("Sarah's favourite language is " + favorite_languages['sarah'].title() + ".")
 
 # Looping Through a Dictionary
 
