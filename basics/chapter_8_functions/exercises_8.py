@@ -24,14 +24,14 @@ make_shirt('M', 'The Beatles')
 make_shirt(size='M', message='Radiohead')
 
 # 8-4. Large Shirts
-def make_shirt(size='XG', message='I love Python!'):
+def make_shirt2(size='XG', message='I love Python!'):
     '''Make a shirt with the desired size and message'''
     print('Shirt size:' + size)
     print('Message in the shirt: ' + message)
 
-make_shirt()
-make_shirt('M')
-make_shirt('P', 'Radiohead')
+make_shirt2()
+make_shirt2('M')
+make_shirt2('P', 'Radiohead')
 
 # 8-5. Cities
 def describe_city(city, country='brazil'):

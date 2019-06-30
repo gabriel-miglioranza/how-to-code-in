@@ -7,7 +7,7 @@
 cars = ['audi', 'bmw', 'subaru', 'toyota']
 
 for car in cars:
-    if car == 'bmw'
+    if car == 'bmw':
         # if the item is equal to 'bmw' Python runs the next line 
         print(car.upper())
     else:
@@ -40,7 +40,7 @@ if requested_topping != 'anchovies':
 age = 18
 print(age == 17) # age is equal to 17?
 print(age == 18) # age is equal to 18?
-print(1.0 = 1) # 1.0 is equal to 1?
+print(1.0 == 1) # 1.0 is equal to 1?
 print(age < 21) # age is less than 21?
 print(age <= 21) # age is less than or equal to 21?
 print(age > 21) # age is greater than 21?

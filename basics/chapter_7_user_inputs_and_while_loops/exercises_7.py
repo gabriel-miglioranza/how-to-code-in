@@ -30,7 +30,7 @@ prompt += "\n(Enter 'quit' when you have finished.)"
 while True:
     message = input(prompt)
 
-    if message == 'quit'
+    if message == 'quit':
         if pizza_toppings:
             print('Plain pizza it is then.')
         else:
@@ -102,7 +102,7 @@ while polling_active:
 
     repeat = input('Would you like to let another person respond? (yes/no)')
     if repeat == 'no':
-    polling_active = False
+        polling_active = False
 
-for name, response in responses.items():
+for name, response in dream_vacation.items():
     print(name.title() + ' would you like to go to ' + response.title() + '.')

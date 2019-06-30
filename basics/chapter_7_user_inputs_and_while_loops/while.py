@@ -11,7 +11,7 @@ while current_number <= 5:
 
 # Letting the User Choose When to Quit 
 prompt = '\nTell me something, and I will repeat it back to you: '
-promt += "\nEnter 'quit' to end the program."
+prompt += "\nEnter 'quit' to end the program."
 # In this case the while loop just breaks its execution when the user enters 'quit' in the prompt.
 message = ''
 while message != 'quit':
@@ -23,7 +23,7 @@ while message != 'quit':
 
 active = True
 
-while active;
+while active:
     message = input(prompt)
 
     if message == 'quit':
