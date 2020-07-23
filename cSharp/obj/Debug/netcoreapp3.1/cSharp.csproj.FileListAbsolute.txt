@@ -1,0 +1,13 @@
+C:\Users\gabri\OneDrive\Documents\Projetos\cSharp\bin\Debug\netcoreapp3.1\cSharp.exe
+C:\Users\gabri\OneDrive\Documents\Projetos\cSharp\bin\Debug\netcoreapp3.1\cSharp.deps.json
+C:\Users\gabri\OneDrive\Documents\Projetos\cSharp\bin\Debug\netcoreapp3.1\cSharp.runtimeconfig.json
+C:\Users\gabri\OneDrive\Documents\Projetos\cSharp\bin\Debug\netcoreapp3.1\cSharp.runtimeconfig.dev.json
+C:\Users\gabri\OneDrive\Documents\Projetos\cSharp\bin\Debug\netcoreapp3.1\cSharp.dll
+C:\Users\gabri\OneDrive\Documents\Projetos\cSharp\bin\Debug\netcoreapp3.1\cSharp.pdb
+C:\Users\gabri\OneDrive\Documents\Projetos\cSharp\obj\Debug\netcoreapp3.1\cSharp.csprojAssemblyReference.cache
+C:\Users\gabri\OneDrive\Documents\Projetos\cSharp\obj\Debug\netcoreapp3.1\cSharp.AssemblyInfoInputs.cache
+C:\Users\gabri\OneDrive\Documents\Projetos\cSharp\obj\Debug\netcoreapp3.1\cSharp.AssemblyInfo.cs
+C:\Users\gabri\OneDrive\Documents\Projetos\cSharp\obj\Debug\netcoreapp3.1\cSharp.csproj.CoreCompileInputs.cache
+C:\Users\gabri\OneDrive\Documents\Projetos\cSharp\obj\Debug\netcoreapp3.1\cSharp.dll
+C:\Users\gabri\OneDrive\Documents\Projetos\cSharp\obj\Debug\netcoreapp3.1\cSharp.pdb
+C:\Users\gabri\OneDrive\Documents\Projetos\cSharp\obj\Debug\netcoreapp3.1\cSharp.genruntimeconfig.cache
