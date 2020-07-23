@@ -33,7 +33,7 @@ namespace cSharp.Intermediate
                 this.ammoCount -= 1;
             } else
             {
-                Console.WriteLine("Click")
+                Console.WriteLine("Click");
             }
         }
 
